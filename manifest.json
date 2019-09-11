@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "One Tab of YouTube",
+  "version": "1.0",
+
+  "description": "Allows YouTube to be open in only one Firefox tab at a time.",
+
+  "icons": {
+    "48": "icons/1.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/"]
+    }
+  ],
+
+  "background": {
+    "scripts": ["onetab.js"]
+  },
+
+  "permissions": [
+    "tabs"
+  ]
+}
